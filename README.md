@@ -22,6 +22,17 @@ mv zoop-release-sdk-ios-prd.s3.sa-east-1.amazonaws.com+2.pem ssl/cert.pem
 docker-compose -f docker-compose.local.yml up
 ```
 
+# Edit hosts file
+```
+sudo vi /etc/hosts
+```
+Add this line on end of file and save (ESC :wq)
+```
+127.0.0.1 zoop-release-sdk-ios-prd.s3.sa-east-1.amazonaws.com
+```
+
+
+
 # Test SSL - Open Browser
 
 (https://zoop-release-sdk-ios-prd.s3.sa-east-1.amazonaws.com/)
